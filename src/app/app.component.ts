@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatPaginator, MatSort } from '@angular/material';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularsandbox';
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
 }
 
